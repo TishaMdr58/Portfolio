@@ -1,0 +1,95 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.navbar a:visited {
+  color: #000;
+}
+
+.logo {
+  font-size: 30px;
+  /* font-weight: 200; */
+  text-decoration: none;
+  color: #000;
+  /* color: #e8c872; */
+  font-family: "Kaushan Script", cursive;
+}
+
+.menuItems {
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  gap: 40px;
+  margin-right: 50px;
+  list-style: none;
+  cursor: pointer;
+}
+
+nav .hamburgerMenu {
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  color: #000;
+  position: absolute;
+}
+
+.burger {
+  width: 230px;
+  height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  left: 0px;
+  top: 70px;
+  border-radius: 5px;
+}
+
+.burger ul {
+  display: inline;
+  list-style: none;
+  text-decoration: none;
+}
+
+.burger ul li {
+  font-size: 32px;
+  margin-left: 10px;
+  color: #e8c872;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 550px) {
+  .navbar {
+    display: flex;
+    align-items: flex-start;
+    height: 75px;
+  }
+  .hamburgerMenu svg {
+    display: flex;
+    font-size: 40px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .about,
+  .projects,
+  .contact {
+    display: none;
+  }
+}
+
+@media (min-width: 550px) {
+  .hamburgerMenu svg {
+    display: none;
+  }
+}

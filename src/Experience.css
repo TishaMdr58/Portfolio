@@ -1,0 +1,48 @@
+.mainContainerExp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subContainerExp {
+  width: 700px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.headerExp {
+  font-size: 48px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills .html,
+.css,
+.react {
+  width: 130px;
+  height: 130px;
+  margin-top: 10px;
+  background-color: #008080;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills img {
+  width: 70px;
+  height: 60px;
+}
+
+.exBox {
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+}
