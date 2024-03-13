@@ -87,3 +87,9 @@ hr {
   background-color: #000;
   border: none;
 }
+
+@media screen and (max-width: 470px) {
+  .detailsFooter {
+    gap: 40px;
+  }
+}

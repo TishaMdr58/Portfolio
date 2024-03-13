@@ -120,13 +120,24 @@ a {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
-    /* margin-right: 157px; */
-    width: max-content;
-    gap: 20px;
+    margin-right: 113px;
+    width: auto;
+    gap: 10px;
+  }
+
+  .content {
+    margin-right: 50px;
   }
 
   .btns .contactmeBtn {
     margin-bottom: 20px;
+    margin-right: 50px;
+    width: max-content;
+  }
+
+  .btns .cvBtn {
+    margin-right: 50px;
+    width: max-content;
   }
 }
 
