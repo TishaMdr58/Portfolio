@@ -12,7 +12,8 @@ import me1 from "../public/tims.jpg";
 
 function Homepage() {
   const handleDownload = () => {
-    const downloadUrl = "../public/TishaManandhar_resume.pdf";
+    const downloadUrl =
+      "https://drive.google.com/file/d/1zJofsqUVnFBin22ZOStj19w7bxEdQLcg/view?usp=drive_link";
     const link = document.createElement("a");
     link.href = downloadUrl;
     link.setAttribute("download", "CV.pdf");
@@ -27,12 +28,12 @@ function Homepage() {
           <div className="container">
             <div className="content">
               <motion.h1
-                initial={{ x: -200 }}
-                animate={{ x: 1 }}
-                transition={{ duration: "1.5" }}
-                whileHover={{ color: "#008080" }}
+                // initial={{ y: 200 }}
+                // animate={{ y: 0 }}
+                // transition={{ duration: "1.5" }}
+                // whileHover={{ color: "#008080" }}
                 className="title-motion"
-                style={{ display: "inline-block", color: "black" }}
+                // style={{ display: "inline-block", color: "black" }}
               >
                 Hi, I'm
                 <Typewriter
@@ -45,9 +46,9 @@ function Homepage() {
               </motion.h1>
 
               <motion.p
-                initial={{ x: -200 }}
-                animate={{ x: 1 }}
-                transition={{ duration: "1.5" }}
+                // initial={{ y: 200 }}
+                // animate={{ y: 0 }}
+                // transition={{ duration: "1.5" }}
                 className="desc"
               >
                 I'm a frontend developer. Reach out if you'd like to learn more!
@@ -58,13 +59,14 @@ function Homepage() {
               <img src={me1} alt="" />
             </motion.div>
           </div>
-          <a href="#contact" className="contactmeBtn">
-            Contact Me
-          </a>
-          <a onClick={handleDownload} className="cvBtn">
-            Download CV
-          </a>
-
+          <div className="btns">
+            <a href="#contact" className="contactmeBtn">
+              Contact Me
+            </a>
+            <a onClick={handleDownload} className="cvBtn">
+              Download CV
+            </a>
+          </div>
           <About />
           <Experience />
           <Projects />

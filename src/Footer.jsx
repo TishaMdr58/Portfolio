@@ -3,6 +3,7 @@ import "./Footer.css";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
 
 function Footer() {
   return (
@@ -38,7 +39,7 @@ function Footer() {
                 </div>
                 <div className="email">
                   <a href="mailto:mdrtisha@gmail.com" className="icon">
-                    <MdOutlineEmail />
+                    <MdEmail />
                   </a>
                   <div className="link3">Email</div>
                 </div>

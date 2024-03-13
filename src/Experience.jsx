@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import "./Experience.css";
 import Skills from "./Skills";
 import { motion } from "framer-motion";
+import html from "../public/html.png";
+import css from "../public/css.png";
+import js from "../public/js.png";
+import react from "../public/react.png";
 
 function Experience() {
   return (
@@ -19,7 +23,7 @@ function Experience() {
               }}
               className="html"
             >
-              <img src="../public/html.png" alt="" />
+              <img src={html} alt="" />
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.3 }}
@@ -30,7 +34,18 @@ function Experience() {
               }}
               className="css"
             >
-              <img src="../public/css.png" alt="" />
+              <img src={css} alt="" />
+            </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.3 }}
+              transition={{
+                layout: {
+                  duration: 1,
+                },
+              }}
+              className="css"
+            >
+              <img src={js} alt="" />
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.3 }}
@@ -41,7 +56,7 @@ function Experience() {
               }}
               className="react"
             >
-              <img src="../public/react.png" alt="" />
+              <img src={react} alt="" />
             </motion.div>
           </div>
           {/* {Skills.map((value, index) => (

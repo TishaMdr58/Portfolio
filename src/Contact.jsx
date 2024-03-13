@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Contact.css";
 import { MdOutlineEmail } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 
@@ -8,7 +9,7 @@ function Contact() {
   const [data, setData] = useState({
     name: "",
     email: "",
-    message: ""
+    message: "",
   });
   const [errors, setErrors] = useState({});
 
@@ -16,11 +17,11 @@ function Contact() {
     const { name, value } = e.target;
     setData({
       ...data,
-      [name]: value
+      [name]: value,
     });
     setErrors({
       ...errors,
-      [name]: ""
+      [name]: "",
     });
   };
 
@@ -31,7 +32,7 @@ function Contact() {
     if (!data.name.trim()) {
       setErrors((prevErrors) => ({
         ...prevErrors,
-        name: "Username is required!"
+        name: "Username is required!",
       }));
       isValid = false;
     }
@@ -39,13 +40,13 @@ function Contact() {
     if (!data.email.trim()) {
       setErrors((prevErrors) => ({
         ...prevErrors,
-        email: "Email is required!"
+        email: "Email is required!",
       }));
       isValid = false;
     } else if (!emailRegex.test(data.email)) {
       setErrors((prevErrors) => ({
         ...prevErrors,
-        email: "Please enter a valid email address."
+        email: "Please enter a valid email address.",
       }));
       isValid = false;
     }
@@ -68,7 +69,7 @@ function Contact() {
           <div className="iconsAndText">
             <div className="emailContact">
               <div className="contactIcon1">
-                <MdOutlineEmail />
+                <MdEmail />
               </div>
               <div className="text1">mdrtisha@gmail.com</div>
             </div>

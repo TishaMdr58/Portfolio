@@ -39,9 +39,9 @@
 .phone,
 .location {
   position: relative;
-  font-size: 28px;
+  font-size: 24px;
   font-style: normal;
-  font-weight: 1000;
+  font-weight: 400;
   line-height: 70px;
 }
 

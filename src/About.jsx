@@ -23,15 +23,7 @@ function About() {
               <img src={me} alt="" />
             </div>
             <div className="myDescription">
-              <h1 className="descHeading">
-                <Typewriter
-                  options={{
-                    strings: ["I am Tisha Manandhar."],
-                    autoStart: true,
-                    loop: true,
-                  }}
-                />
-              </h1>
+              <h1 className="descHeading">I am Tisha Manandhar.</h1>
               <p>
                 I'm a passionate frontend developer with expertise in React.js,
                 HTML, CSS, and JavaScript. With a keen eye for detail and a love
