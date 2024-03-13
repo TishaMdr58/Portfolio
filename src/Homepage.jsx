@@ -59,12 +59,14 @@ function Homepage() {
               <img src={me1} alt="" />
             </motion.div>
           </div>
-          <a href="#contact" className="contactmeBtn">
-            Contact Me
-          </a>
-          <a onClick={handleDownload} className="cvBtn">
-            Download CV
-          </a>
+          <div className="btns">
+            <a href="#contact" className="contactmeBtn">
+              Contact Me
+            </a>
+            <a onClick={handleDownload} className="cvBtn">
+              Download CV
+            </a>
+          </div>
 
           <About />
           <Experience />
