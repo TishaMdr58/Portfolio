@@ -20,13 +20,13 @@
 
 .header {
   font-size: 35px;
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: none;
   color: #fff;
   margin-top: 20px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
   text-align: center;
-  font-family: Lora;
+  /* font-family: Lora; */
 }
 
 .myContent {
@@ -51,12 +51,12 @@
   letter-spacing: 1.25px;
   margin: 30px 50px;
   text-align: justify;
-  font-family: Lora;
+  /* font-family: Lora; */
 }
 
 .descHeading {
   color: #fff;
-  font-family: Lato;
+  /* font-family: Lato; */
   font-size: 32px;
   font-style: normal;
   font-weight: 600;

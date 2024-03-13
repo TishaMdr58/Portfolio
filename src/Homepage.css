@@ -66,6 +66,12 @@ gray:#E9EAEC
   background: #008080;
   color: #fff;
   cursor: pointer;
+  z-index: 1;
+  position: relative;
+}
+
+a {
+  z-index: 1;
 }
 
 .cvBtn {
@@ -80,6 +86,7 @@ gray:#E9EAEC
   border-radius: 100px;
   background: #008080;
   cursor: pointer;
+  position: relative;
 }
 
 .myImage {
