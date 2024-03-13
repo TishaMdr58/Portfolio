@@ -115,16 +115,23 @@ a {
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 500px) {
   .btns {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-right: 157px;
+    /* align-items: center; */
+    /* margin-right: 157px; */
     width: max-content;
+    gap: 20px;
   }
 
   .btns .contactmeBtn {
     margin-bottom: 20px;
   }
 }
+
+/* @media screen and (max-width: 600px) {
+  .bts {
+    margin-right: 20px;
+  }
+} */
