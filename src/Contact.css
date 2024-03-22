@@ -18,11 +18,11 @@
 }
 
 .left {
-  color: #fff;
+  color: #f8f8ff;
 }
 
 .left h1 {
-  color: #fff;
+  color: #f8f8ff;
   font-family: Kodchasan;
   font-size: 40px;
   font-style: normal;
@@ -75,7 +75,7 @@
   justify-content: center;
   /* align-items: flex-start; */
   gap: 20px;
-  background-color: #fff;
+  background-color: #f8f8ff;
   border-radius: 10px;
 }
 
@@ -87,7 +87,9 @@
   outline: none;
   border-width: 0 0 2px;
   border-color: #008080;
-  font-size: 24px;
+  font-size: 20px;
+  background-color: #f8f8ff;
+  padding: 5px;
 }
 
 textarea {
@@ -95,10 +97,13 @@ textarea {
   border-color: #008080;
   border-radius: 10px;
   outline: none;
+  background-color: #f8f8ff;
+  font-size: 20px;
+  padding: 20px;
 }
 
 .form .btn {
-  color: #fff;
+  color: #f8f8ff;
   font-weight: 600;
   display: flex;
   padding: 16px 71px;

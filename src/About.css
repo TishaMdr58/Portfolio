@@ -20,49 +20,44 @@
 
 .header {
   font-size: 35px;
-  font-weight: 400;
+  font-weight: 600;
   text-decoration: none;
-  color: #fff;
-  margin-top: 20px;
-  /* margin-left: 50px; */
-  text-align: center;
-  /* font-family: Lora; */
+  color: #f8f8ff;
+  margin-left: 400px;
 }
 
 .myContent {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .imageOfMe img {
   width: 250px;
   height: auto;
-  border-radius: 25%;
+  border-radius: 5%;
   margin-left: 50px;
   margin-right: 50px;
 }
 
-.myDescription {
-  color: #fff;
-  font-size: 20px;
+.descHeading {
+  color: #f8f8ff;
+  font-size: 28px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 10px;
+}
+
+.myDescription {
+  color: #f8f8ff;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 28px;
   letter-spacing: 1.25px;
   margin: 30px 50px;
   text-align: justify;
-  /* font-family: Lora; */
-}
-
-.descHeading {
-  color: #fff;
-  /* font-family: Lato; */
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 1015px) {

@@ -26,10 +26,10 @@
 }
 
 .projectItem {
-  background-color: #fff;
+  background-color: #F8F8FF;
   border-radius: 8.383px;
-  border: 10px solid black;
-  background-color: #000;
+  border: 10px solid #0C0404;
+  background-color: #0C0404;
   display: flex;
   flex-direction: column;
   width: 365px;
@@ -66,7 +66,7 @@
 }
 
 .projectTitle {
-  color: #000;
+  color: #0C0404;
   font-family: "Work Sans";
   font-size: 22px;
   font-style: normal;
@@ -75,7 +75,7 @@
 }
 
 .projectDesc {
-  color: #000;
+  color: #0C0404;
   font-family: "Work Sans";
   font-size: 20px;
   font-style: normal;
@@ -87,7 +87,7 @@
   display: inline-block;
   margin-top: 15px;
   padding: 8px 20px;
-  /* background-color: #fff; */
+  /* background-color: #F8F8FF; */
   color: #ff7e5f;
   border: none;
   border-radius: 20px;

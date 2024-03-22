@@ -9,6 +9,7 @@ import Contact from "./Contact";
 import Typewriter from "typewriter-effect";
 import Projects from "./Projects";
 import me1 from "../public/tims.jpg";
+import lol from "../public/lol.png";
 
 function Homepage() {
   const handleDownload = () => {
@@ -31,7 +32,7 @@ function Homepage() {
                 // initial={{ y: 200 }}
                 // animate={{ y: 0 }}
                 // transition={{ duration: "1.5" }}
-                // whileHover={{ color: "#008080" }}
+                whileHover={{ color: "#008080" }}
                 className="title-motion"
                 // style={{ display: "inline-block", color: "black" }}
               >
@@ -51,18 +52,17 @@ function Homepage() {
                 // transition={{ duration: "1.5" }}
                 className="desc"
               >
-                I'm a frontend developer. Reach out if you'd like to learn more!
+                I'm a frontend developer. I specialize in creating visually
+                appealing, user-friendly interfaces for websites and web
+                applications. Reach out if you'd like to learn more!
               </motion.p>
             </div>
 
             <motion.div className="myImage">
-              <img src={me1} alt="" />
+              <img src={lol} alt="" />
             </motion.div>
           </div>
           <div className="btns">
-            <a href="#contact" className="contactmeBtn">
-              Contact Me
-            </a>
             <a onClick={handleDownload} className="cvBtn">
               Download CV
             </a>

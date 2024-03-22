@@ -7,25 +7,25 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: #fff;
+  background-color: #F8F8FF;
   z-index: 100;
 }
 
 .menuItems a{
   text-decoration: none;
-  color: black;
+  color: #0C0404;
   }
   
 
 .navbar a:visited {
-  color: #000;
+  color: #0C0404;
 }
 
 .logo {
   font-size: 30px;
   /* font-weight: 200; */
   text-decoration: none;
-  color: #000;
+  color: #0C0404;
   /* color: #e8c872; */
   font-family: "Kaushan Script", cursive;
 }
@@ -45,14 +45,14 @@ nav .hamburgerMenu {
   display: flex;
   align-items: center;
   padding-left: 20px;
-  color: #000;
+  color: #0C0404;
   position: absolute;
 }
 
 .burger {
   width: 230px;
   height: 100vh;
-  background-color: #fff;
+  background-color: #F8F8FF;
   position: fixed;
   left: 0px;
   top: 70px;

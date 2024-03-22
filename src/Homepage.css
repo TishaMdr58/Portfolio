@@ -29,7 +29,7 @@ gray:#E9EAEC
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 19px 165px 0px 179px;
+  margin: 19px 165px -54px 179px;
 }
 
 .content {
@@ -37,7 +37,7 @@ gray:#E9EAEC
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  color: #000;
+  color: #0c0404;
 }
 
 .content .title-motion {
@@ -48,7 +48,7 @@ gray:#E9EAEC
 }
 
 .content .desc {
-  font-size: 28px;
+  font-size: 24px;
   font-family: var(--font-roboto);
   margin-bottom: 52px;
   margin-right: 10px;
@@ -56,7 +56,6 @@ gray:#E9EAEC
 
 .btns {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   margin-left: 150px;
   /* margin-bottom: -20px; */
@@ -71,7 +70,7 @@ gray:#E9EAEC
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
   border-radius: 100px;
   background: #008080;
-  color: #fff;
+  color: #f8f8ff;
   cursor: pointer;
   z-index: 1;
   position: relative;
@@ -83,12 +82,12 @@ a {
 
 .btns .cvBtn {
   text-decoration: none;
-  color: #fff;
+  color: #f8f8ff;
   border-radius: 100px;
   font-size: 22px;
   font-weight: 600;
   padding: 15px 20px;
-  margin-left: 10px;
+  margin-left: 26px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
   border-radius: 100px;
   background: #008080;
@@ -106,7 +105,7 @@ a {
 }
 
 .typeWriter {
-  color: #000;
+  color: #0c0404;
 }
 
 @media screen and (max-width: 890px) {
