@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./Contact.css";
-import { MdOutlineEmail } from "react-icons/md";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
@@ -54,12 +53,35 @@ function Contact() {
     return isValid;
   };
 
-  const handleButtonClick = () => {
+  const handleButtonClick = async () => {
     const isValid = validateForm();
     if (isValid) {
-      alert("Message has been sent!");
+      try {
+        const response = await fetch("https://formspree.io/mdrtisha@gmail.com", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(data)
+        });
+        
+        if (response.ok) {
+          console.log("Message has been sent!");
+          setData({
+            name: "",
+            email: "",
+            message: ""
+          });
+        } else {
+          console.error("Failed to send message. Please try again later.");
+        }
+      } catch (error) {
+        console.error("An error occurred. Please try again later.");
+        console.error(error);
+      }
     }
   };
+  
 
   return (
     <div id="contact" className="mainContact">
@@ -87,7 +109,11 @@ function Contact() {
             </div>
           </div>
         </div>
-        <div className="form">
+        <form
+          className="form"
+          action="https://formspree.io/mdrtisha@gmail.com"
+          method="POST"
+        >
           <div className="name">Your name</div>
           <input
             type="text"
@@ -118,7 +144,7 @@ function Contact() {
           <div className="btn" onClick={handleButtonClick}>
             Send Message
           </div>
-        </div>
+        </form>
       </div>
     </div>
   );
