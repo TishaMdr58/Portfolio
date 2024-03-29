@@ -14,7 +14,7 @@ import lol from "../public/lol.png";
 function Homepage() {
   const handleDownload = () => {
     const downloadUrl =
-      "https://drive.google.com/file/d/1zJofsqUVnFBin22ZOStj19w7bxEdQLcg/view?usp=sharing";
+      "https://drive.google.com/file/d/1RPZgAfltF-TQvSY1XSn_-CJvIxNJv0r6/view?usp=sharing";
     const link = document.createElement("a");
     link.href = downloadUrl;
     link.setAttribute("download", "CV.pdf");
